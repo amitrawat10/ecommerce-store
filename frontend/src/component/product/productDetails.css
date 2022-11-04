@@ -1,0 +1,335 @@
+.ProductDetails {
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  max-width: 100%;
+  padding: 6vmax;
+  box-sizing: border-box;
+  display: flex;
+  font-family: "formular";
+}
+
+.ProductDetails > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  padding: 2vmax;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+.carouselDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carouselDiv div {
+  width: 100%;
+}
+.ProductDetails > div:last-child {
+  align-items: flex-start;
+}
+.imgContainer {
+  text-align: center;
+}
+
+.CarouselImage {
+  width: 30vmax;
+}
+.detailsBlock-1 > h2 {
+  color: rgb(54, 54, 54);
+}
+
+.detailsBlock-1 > p {
+  color: rgba(54, 54, 54, 0.582);
+  font: 200 0.6vmax cursive;
+}
+.detailsBlock-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.205);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  width: 70%;
+  padding: 1vmax 0;
+  margin-top: 1rem;
+}
+
+.detailsBlock-2 span span {
+  font-size: 15px;
+  cursor: pointer;
+}
+.detailsBlock-2-span {
+  font: 200 0.8vmax "roboto";
+  color: rgba(0, 0, 0, 0.699);
+}
+
+.detailsBlock-3 {
+  width: 70%;
+}
+.detailsBlock-3 > h1 {
+  color: rgba(17, 17, 17, 0.795);
+  font: 400 1.8vmax;
+  margin: 1vmax 0;
+}
+.detailsBlock-3-1 {
+  display: flex;
+  align-items: center;
+}
+.detailsBlock-3-1-1 > button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.616);
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 19px;
+  color: white;
+  padding: 0.06rem 0.6rem;
+  transition: all 0.5s;
+}
+.detailsBlock-3-1-1 > button:hover {
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.detailsBlock-3-1-1 > input {
+  border: none;
+  padding: 0.5vmax;
+  width: 1rem;
+  text-align: center;
+  outline: none;
+  font: 900 0.8vmax "Roboto";
+  color: rgba(0, 0, 0, 0.74);
+}
+.detailsBlock-3-1 > button:last-child {
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+  background-color: tomato;
+  font: 500 1rem "Roboto";
+  border-radius: 20px;
+  padding: 0.5vmax 2vmax;
+  margin: 1vmax;
+  outline: none;
+}
+
+.detailsBlock-3-1 > button:last-child:hover {
+  background-color: rgb(214, 84, 61);
+}
+
+.detailsBlock-3 > p {
+  border-top: 1px solid rgba(0, 0, 0, 0.205);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  padding: 1vmax 0;
+  color: rgba(0, 0, 0, 0.651);
+  font: 400 1vmax "Roboto";
+  margin: 1vmax 0;
+  font-weight: bold;
+}
+
+.detailsBlock-4 {
+  color: rgba(0, 0, 0, 0.897);
+  font: 500 1.2vmax sans-serif;
+}
+
+.detailsBlock-4 > p {
+  color: rgba(0, 0, 0, 0.534);
+  font: 300 0.8vmax sans-serif;
+}
+.submitReview {
+  border: none;
+  background-color: #80bd9e;
+  font: 500 1rem "Roboto";
+  border-radius: 20px;
+  padding: 0.6vmax 2vmax;
+  margin: 1vmax 0;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+}
+.submitReview:hover {
+  background-color: rgb(59, 15, 8);
+  transform: scale(1);
+}
+.submitDialog {
+  display: flex;
+  flex-direction: column;
+}
+.submitDialogTextArea {
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  margin: 1vmax 0;
+  outline: none;
+  padding: 1rem;
+  font: 300 1rem "Roboto";
+}
+
+.reviewsHeading {
+  color: #000000be;
+  font: 500 1.4vmax "Roboto";
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+  padding: 1vmax;
+  width: 20vmax;
+  margin: auto;
+  margin-bottom: 4vmax;
+}
+.reviews {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  overflow: auto;
+  width: 90%;
+  margin: auto;
+}
+.noReviews {
+  text-align: center;
+  color: #000000be;
+  font-weight: bold;
+  margin: 1rem;
+  font-family: "Roboto";
+}
+.reviewCard {
+  font-family: "formular";
+  padding: 1.1rem;
+  border: 1px solid rgb(207, 202, 202);
+  border-radius: 4px;
+}
+
+.reviewImg_name {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.productMRP {
+  color: lightgray;
+  font-size: 18px;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.reviewImg_name p {
+  text-transform: capitalize;
+  font-size: 12px !important;
+  font-family: roboto;
+  margin-left: 0.5rem;
+  font-weight: 900;
+  color: #000000be;
+}
+.reviewCard .reviewImg {
+  width: 30px;
+  height: 30px;
+}
+
+.reviewCard span {
+  font-size: 14px;
+  margin: 0.1rem 0;
+}
+
+.reviewCardComment {
+  color: #000000be;
+  font-size: 10px;
+  /* font-weight: 500; */
+}
+
+.similarProductsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  gap: 1rem;
+  padding: 4rem;
+  color: #000000be;
+}
+
+.similarHeading {
+  font-family: formular;
+  margin: auto;
+  display: block !important;
+  color: #000000be;
+  margin-top: 5rem;
+  text-align: center;
+}
+.similarProductsContainer .similarProductCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(207, 202, 202);
+  font-family: formular;
+  padding: 0.7rem;
+  justify-content: center;
+  border-radius: 4px;
+  align-items: center;
+  height: 16rem;
+}
+.similarProductsContainer a {
+  color: #000000be;
+  text-decoration: none !important;
+}
+.similarProductsContainer .similarProductCard .similarProductCard-up {
+  height: 60%;
+}
+
+.similarProductsContainer .similarProductCard .similarProductCard-up img {
+  width: 100%;
+  text-align: center;
+}
+
+.similarName {
+  margin: 0.5rem 0 0.3rem 0;
+}
+
+.similarRating {
+  margin-top: 0.4rem;
+  display: flex;
+  align-items: center;
+}
+.similarRating span {
+  font-size: 0.9rem !important;
+}
+
+.similarRating .numOfReviewsSimilar {
+  font-size: 0.7rem !important;
+}
+@media (max-width: 600px) {
+  .ProductDetails {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vmax;
+  }
+  .ProductDetails > div {
+    justify-content: center;
+  }
+  .CarouselImage {
+    width: 35vmax;
+  }
+  .detailsBlock-2 {
+    align-items: center;
+    width: 100%;
+  }
+  .detailsBlock-2 p {
+    font-size: 12px;
+  }
+  .detailsBlock-3 {
+    width: 100%;
+  }
+  .detailsBlock-3-1 {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .detailsBlock-3-1-1 {
+    margin: 1.3rem 0;
+  }
+  .detailsBlock-3-1-1 > input {
+    width: 2rem;
+  }
+
+  .detailsBlock-3-1 > button {
+    margin-left: 0 !important;
+  }
+  .reviews {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: auto;
+    width: 90%;
+    margin: auto;
+  }
+}

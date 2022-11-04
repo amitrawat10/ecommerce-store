@@ -1,0 +1,18 @@
+.productListContainer {
+  width: 90% !important;
+  /* margin: ; */
+}
+
+#productListHeading {
+  color: rgba(0, 0, 0, 0.493);
+  font-family: "Roboto";
+  margin: 1.4rem 0;
+}
+
+.editIcon {
+  line-height: 0;
+}
+
+.editIcon:hover svg {
+  color: tomato !important;
+}
